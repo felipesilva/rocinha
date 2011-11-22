@@ -1,0 +1,8 @@
+_Store
+*.DS_Store
+public/.DS_Store
+.sass-cache
+.project
+*.orig
+.sass-cache/
+.sass-cache/*
