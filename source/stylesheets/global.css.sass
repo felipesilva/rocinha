@@ -1,0 +1,76 @@
+@import "compass/reset"
+@import "compass/css3"
+@import "compass/utilities/general/clearfix"
+
+$orange: #ff431a
+$purple: #662443
+
+body
+  font-family: helvetica, arial, sans
+  font-size: 12px
+
+#header
+  padding: 50px 0 
+  +clearfix
+  
+  a
+    display: block
+    height: 95px
+    line-height: 999px
+    float: left
+    outline: none
+    
+  .rocinha-santa-claus
+    background: url(/images/logo-santa-claus.png) no-repeat right center
+    margin-right: 40px
+    width: 610px
+  
+  .rocinha-org
+    background: url(/images/logo-rocinha-org.png) no-repeat left center
+    width: 310px
+
+#main
+  +clearfix
+  
+  #video
+    background: #fff
+    border-left: 10px solid $orange
+    border-right: 1px solid $purple
+    float: left
+    width: 640px
+    height: 390px
+    margin-right: 30px
+  
+  p.goal
+    color: #666
+    font-size: 18px
+    padding: 26px 0
+    
+  .numbers
+    color: $purple
+    letter-spacing: -2px
+    strong
+      font-size: 52px
+      font-weight: bold
+    p
+      font-size: 48px
+      padding-bottom: 16px
+      
+  .donate
+    background: $purple
+    padding: 26px 0
+    margin-bottom: 30px
+    a
+      color: #fff
+      font-size: 52px
+      font-weight: bold
+      text-decoration: none
+      letter-spacing: -2px
+      
+  .share
+    strong
+      color: $purple
+      font-size: 26px
+      font-weight: bold
+      padding-right: 30px
+      vertical-align: top

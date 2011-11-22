@@ -1,0 +1,20 @@
+!!! 5
+
+%html
+  %head
+    %title Rocinha - Santa Claus
+    = stylesheet_link_tag "global.css"
+    = yield_content :extra_stylesheets
+
+  %body
+    
+    #container
+      #header
+        %a.rocinha-santa-claus{:href => "#"} Rocinha Santa Claus
+        %a.rocinha-org{:href => "http://www.rocinha.org", :target => "_blank"} Rocinha.org
+      
+      #main
+        = yield
+
+
+    = yield_content :extra_javascripts
