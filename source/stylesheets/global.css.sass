@@ -30,7 +30,7 @@ body
     width: 310px
 
 #main
-  +clearfix
+  +pie-clearfix
   
   #video
     background: #fff
@@ -41,32 +41,46 @@ body
     height: 390px
     margin-right: 30px
   
-  p.goal
-    color: #666
-    font-size: 18px
-    padding: 30px 0
-    
+  .goal
+    p
+      color: #666
+      display: inline-block
+      font-size: 18px
+      padding: 20px 0
+      line-height: 24px
+      width: 570px
+      strong
+        font-weight: bold
+      
   .numbers
     color: $purple
     letter-spacing: -2px
+    padding-top: 16px
     strong
       font-size: 52px
       font-weight: bold
     p
       font-size: 48px
-      padding-bottom: 20px
+      padding-bottom: 16px
       
   .donate
     background: $purple
-    padding: 26px 0
-    margin-bottom: 30px
+    padding: 26px 0 20px
+    .pagseguro, .im-american
+      display: none
     a
       color: #fff
-      font-size: 52px
-      font-weight: bold
+      display: inline-block
+      font-size: 11px
+      padding-top: 6px
       text-decoration: none
-      letter-spacing: -2px
       
+  .brasileiro
+    .paypal, .sou-brasileiro
+      display: none
+    .pagseguro, .im-american
+      display: block
+  
   .share
     strong
       color: $purple

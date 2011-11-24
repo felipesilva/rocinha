@@ -1,0 +1,20 @@
+desc "Create a build of flat files."
+task :create_build do
+  puts "Creating a build"
+  sh %{ middleman build } do |ok, res|
+    if !ok
+      puts "There was a problem while creating build. Please try again. (status = #{res.exitstatus})"
+    end
+  end
+end
+
+desc "Deploy"
+task :'deploy' => [:create_build] do
+  puts "Deploying to Server (rocinhasantaclaus.org public_html/)"
+  sh %{ rsync -rhltvz -e ssh --progress --delete build/* rocinhas@rocinhasantaclaus.org:public_html/ } do |ok, res|
+    if !ok
+      puts "There was a problem deploying via rsync. Please try again. (status = #{res.exitstatus})"
+    end
+  end
+  puts "Deployment complete."
+end

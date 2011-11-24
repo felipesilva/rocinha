@@ -68,8 +68,11 @@ body {
     width: 310px; }
 
 #main {
-  overflow: hidden;
   *zoom: 1; }
+  #main:after {
+    content: "";
+    display: table;
+    clear: both; }
   #main #video {
     background: white;
     border-left: 10px solid #ff431a;
@@ -78,13 +81,19 @@ body {
     width: 640px;
     height: 390px;
     margin-right: 30px; }
-  #main p.goal {
+  #main .goal p {
     color: #666666;
+    display: inline-block;
     font-size: 18px;
-    padding: 30px 0; }
+    padding: 20px 0;
+    line-height: 24px;
+    width: 570px; }
+    #main .goal p strong {
+      font-weight: bold; }
   #main .numbers {
     color: #662443;
-    letter-spacing: -2px; }
+    letter-spacing: -2px;
+    padding-top: 16px; }
     #main .numbers strong {
       font-size: 52px;
       font-weight: bold; }
@@ -93,8 +102,7 @@ body {
       padding-bottom: 20px; }
   #main .donate {
     background: #662443;
-    padding: 26px 0;
-    margin-bottom: 30px; }
+    padding: 26px 0; }
     #main .donate a {
       color: white;
       font-size: 52px;
