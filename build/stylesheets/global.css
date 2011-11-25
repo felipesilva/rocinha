@@ -99,16 +99,22 @@ body {
       font-weight: bold; }
     #main .numbers p {
       font-size: 48px;
-      padding-bottom: 20px; }
+      padding-bottom: 16px; }
   #main .donate {
     background: #662443;
-    padding: 26px 0; }
+    padding: 26px 0 20px; }
+    #main .donate .pagseguro, #main .donate .im-american {
+      display: none; }
     #main .donate a {
       color: white;
-      font-size: 52px;
-      font-weight: bold;
-      text-decoration: none;
-      letter-spacing: -2px; }
+      display: inline-block;
+      font-size: 11px;
+      padding-top: 6px;
+      text-decoration: none; }
+  #main .brasileiro .paypal, #main .brasileiro .sou-brasileiro {
+    display: none; }
+  #main .brasileiro .pagseguro, #main .brasileiro .im-american {
+    display: block; }
   #main .share strong {
     color: #662443;
     font-size: 26px;
